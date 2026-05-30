@@ -100,28 +100,28 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Ecommerce</NavLink>
+                  <NavLink to="/" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Ecommerce</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/analytics" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Analytics</NavLink>
+                  <NavLink to="/analytics" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Analytics</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/marketing" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Marketing</NavLink>
+                  <NavLink to="/marketing" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Marketing</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/stocks" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Stocks</NavLink>
+                  <NavLink to="/stocks" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Stocks</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/saas" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>SaaS</NavLink>
+                  <NavLink to="/saas" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>SaaS</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/logistics" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Logistics</NavLink>
+                  <NavLink to="/logistics" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Logistics</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/ai/sales" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sales</NavLink>
+                  <NavLink to="/ai/sales" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sales</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/ai/finance" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Finance</NavLink>
+                  <NavLink to="/ai/finance" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Finance</NavLink>
                 </li>
               </ul>
             </div>
@@ -148,19 +148,19 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/text-generator" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Text Generator</NavLink>
+                  <NavLink to="/text-generator" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Text Generator</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/image-generator" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Image Generator</NavLink>
+                  <NavLink to="/image-generator" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Image Generator</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/code-generator" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Code Generator</NavLink>
+                  <NavLink to="/code-generator" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Code Generator</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/video-generator" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Video Generator</NavLink>
+                  <NavLink to="/video-generator" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Video Generator</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/settings" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>AI Settings</NavLink>
+                  <NavLink to="/settings" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>AI Settings</NavLink>
                 </li>
               </ul>
             </div>
@@ -187,25 +187,25 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/products" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Products</NavLink>
+                  <NavLink to="/products" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Products</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/productsadd" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Add Product</NavLink>
+                  <NavLink to="/productsadd" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Add Product</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/billing" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Billing</NavLink>
+                  <NavLink to="/billing" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Billing</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/invoices" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Invoices</NavLink>
+                  <NavLink to="/invoices" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Invoices</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/single-invoice" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Single Invoice</NavLink>
+                  <NavLink to="/single-invoice" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Single Invoice</NavLink>
                 </li>
               </ul>
             </div>
 
             {/* Calendar */}
-            <NavLink to="/calendar" className={({ isActive }) => `flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 cursor-pointer transition ${isActive ? 'bg-gray-700 text-blue-400' : ''}`}>
+            <NavLink to="/calendar" onClick={onClose} className={({ isActive }) => `flex items-center gap-3 p-3 rounded-lg hover:bg-gray-700 cursor-pointer transition ${isActive ? 'bg-gray-700 text-blue-400' : ''}`}>
               <Calendar size={20} />
               <span>Calendar</span>
             </NavLink>
@@ -232,10 +232,10 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/list" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>List</NavLink>
+                  <NavLink to="/list" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>List</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/kanban" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Kanban</NavLink>
+                  <NavLink to="/kanban" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Kanban</NavLink>
                 </li>
               </ul>
             </div>
@@ -262,10 +262,10 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/layout" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Form Layout</NavLink>
+                  <NavLink to="/layout" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Form Layout</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/elements" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Form Element</NavLink>
+                  <NavLink to="/elements" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Form Element</NavLink>
                 </li>
               </ul>
             </div>
@@ -292,13 +292,13 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/404" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 404</NavLink>
+                  <NavLink to="/404" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 404</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/500" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 500</NavLink>
+                  <NavLink to="/500" onClick={onClose}  className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 500</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/503" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 503</NavLink>
+                  <NavLink to="/503" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Error 503</NavLink>
                 </li>
               </ul>
             </div>
@@ -325,16 +325,16 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/layoutsone" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout One</NavLink>
+                  <NavLink to="/layoutsone" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout One</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/layoutstwo" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Two</NavLink>
+                  <NavLink to="/layoutstwo" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Two</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/layouts/three" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Three</NavLink>
+                  <NavLink to="/layoutstwo" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Three</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/layouts/four" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Four</NavLink>
+                  <NavLink to="/layoutstwo" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Layout Four</NavLink>
                 </li>
               </ul>
             </div>
@@ -370,10 +370,10 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/support-tickets" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Ticket List</NavLink>
+                  <NavLink to="/support-tickets" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Ticket List</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/support-replay" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Tickets Replay</NavLink>
+                  <NavLink to="/support-replay" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Tickets Replay</NavLink>
                 </li>
               </ul>
             </div>
@@ -400,10 +400,10 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/inbox" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Inbox</NavLink>
+                  <NavLink to="/inbox" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Inbox</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/details" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Details</NavLink>
+                  <NavLink to="/details" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Details</NavLink>
                 </li>
               </ul>
             </div>
@@ -435,13 +435,13 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/charts-line" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Line Chart</NavLink>
+                  <NavLink to="/charts-line" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Line Chart</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/charts-pie" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Pie Chart</NavLink>
+                  <NavLink to="/charts-pie" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Pie Chart</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/charts-bar" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Bar Chart</NavLink>
+                  <NavLink to="/charts-bar" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Bar Chart</NavLink>
                 </li>
               </ul>
             </div>
@@ -468,10 +468,10 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/maps" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Maps</NavLink>
+                  <NavLink to="/maps" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Maps</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/maps-vector" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Vectors Map</NavLink>
+                  <NavLink to="/maps-vector" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Vectors Map</NavLink>
                 </li>
               </ul>
             </div>
@@ -498,16 +498,16 @@ const SideBar = ({ isOpen, onClose }) => {
                   }`}
               >
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/signin" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sign In</NavLink>
+                  <NavLink to="/signin" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sign In</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/signup" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sign Up</NavLink>
+                  <NavLink to="/signup" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Sign Up</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/2fa" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Two-Factor Authentication</NavLink>
+                  <NavLink to="/2fa" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Two-Factor Authentication</NavLink>
                 </li>
                 <li className='px-3 py-2 rounded-lg hover:bg-gray-700'>
-                  <NavLink to="/reset-password" className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Reset Password</NavLink>
+                  <NavLink to="/reset-password" onClick={onClose} className={({ isActive }) => `block ${isActive ? 'text-blue-400' : ''}`}>Reset Password</NavLink>
                 </li>
               </ul>
             </div>

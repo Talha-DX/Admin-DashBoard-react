@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { setBackgroundColor } from  '../Features/background'; // Adjust path if needed
+import { setBackgroundColor } from  '../Features/background'; 
+import { Link } from 'react-router-dom';
 import {
     AlignJustify,
     Search,
@@ -85,9 +86,9 @@ const NavBar = ({ onMenuClick }) => {
                         }`}
                     >
                         {isDark ? (
-                            <Sun className='w-5 h-5' />
+                            <Sun className='w-5 h-5 cursor-pointer' />
                         ) : (
-                            <Moon className='w-5 h-5' />
+                            <Moon className='w-5 h-5 cursor-pointer' />
                         )}
                     </button>
 
@@ -95,7 +96,7 @@ const NavBar = ({ onMenuClick }) => {
                     <button className={`p-2 border rounded-full hover:bg-opacity-80 transition relative ${
                         isDark ? 'border-gray-600 hover:bg-gray-700' : 'border-gray-300 hover:bg-gray-100'
                     }`}>
-                        <Bell className='w-5 h-5' />
+                        <Bell className='w-5 h-5 cursor-pointer' />
                         <span className='absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full'></span>
                     </button>
 
@@ -131,15 +132,15 @@ const NavBar = ({ onMenuClick }) => {
                                 : 'bg-white border-gray-200'
                         }`}>
                             <ul>
-                                <li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
+                                <Link to="/"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
                                     isDark ? 'hover:bg-gray-700' : 'hover:bg-gray-100'
-                                }`}>Profile</li>
-                                <li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
+                                }`}>Profile</li></Link>
+                                <Link to="/settings"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
                                     isDark ? 'hover:bg-gray-700' : 'hover:bg-gray-100'
-                                }`}>Settings</li>
-                                <li className={`px-4 py-3 hover:bg-red-500 cursor-pointer text-sm ${
+                                }`}>Settings</li></Link>
+                                <Link to="/Signup"><li className={`px-4 py-3 hover:bg-red-500 cursor-pointer text-sm ${
                                     isDark ? 'hover:bg-red-600' : 'hover:bg-red-100 text-red-600'
-                                }`}>Logout</li>
+                                }`}>Logout</li></Link>
                             </ul>
                         </div>
                     )}
