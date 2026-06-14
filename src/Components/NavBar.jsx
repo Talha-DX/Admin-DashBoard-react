@@ -31,11 +31,7 @@ const NavBar = ({ onMenuClick }) => {
     return (
         <>
             <header 
-                className={`px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between border-b sticky top-0 z-30 transition-all duration-300 ${
-                    isDark 
-                        ? 'bg-gray-900 text-white border-gray-700' 
-                        : 'bg-white text-gray-900 border-gray-200 shadow-sm'
-                }`}
+                className={`px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between border-b sticky top-0 z-30 transition-all duration-300 bg-gray-900 text-white border-gray-700`}
             >
                 {/* Left Section */}
                 <div className='flex items-center gap-2 sm:gap-4'>
@@ -60,17 +56,13 @@ const NavBar = ({ onMenuClick }) => {
                                     : 'bg-gray-100 text-gray-900 border-gray-300'
                             }`}
                         />
-                        <Search className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 ${
-                            isDark ? 'text-gray-400' : 'text-gray-500'
-                        }`} />
+                        <Search className={`absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500`} />
                     </div>
 
                     {/* Mobile Search Button */}
                     <button
                         onClick={() => setIsSearchOpen(!isSearchOpen)}
-                        className={`p-2 border rounded-lg hover:bg-opacity-80 transition md:hidden ${
-                            isDark ? 'border-gray-600 hover:bg-gray-700' : 'border-gray-300 hover:bg-gray-100'
-                        }`}
+                        className={`p-2 border rounded-lg hover:bg-opacity-80 transition md:hidden border-gray-600 hover:bg-gray-700`}
                     >
                         <Search className='w-5 h-5' />
                     </button>
@@ -79,7 +71,7 @@ const NavBar = ({ onMenuClick }) => {
                 {/* Right Section */}
                 <div className='flex items-center gap-2 sm:gap-4 relative'>
                     {/* Theme Toggle */}
-                    <button 
+                    {/* <button 
                         onClick={toggleTheme}
                         className={`p-2 border rounded-full hover:bg-opacity-80 transition ${
                             isDark ? 'border-gray-600 hover:bg-gray-700' : 'border-gray-300 hover:bg-gray-100'
@@ -90,12 +82,10 @@ const NavBar = ({ onMenuClick }) => {
                         ) : (
                             <Moon className='w-5 h-5 cursor-pointer' />
                         )}
-                    </button>
+                    </button> */}
 
                     {/* Notification */}
-                    <button className={`p-2 border rounded-full hover:bg-opacity-80 transition relative ${
-                        isDark ? 'border-gray-600 hover:bg-gray-700' : 'border-gray-300 hover:bg-gray-100'
-                    }`}>
+                    <button className={`p-2 border rounded-full hover:bg-opacity-80 transition relative border-gray-600 hover:bg-gray-700`}>
                         <Bell className='w-5 h-5 cursor-pointer' />
                         <span className='absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full'></span>
                     </button>
@@ -103,11 +93,7 @@ const NavBar = ({ onMenuClick }) => {
                     {/* Profile */}
                     <div
                         onClick={() => setOpen(!open)}
-                        className={`flex items-center gap-2 px-2 py-1 rounded-full cursor-pointer transition ${
-                            isDark 
-                                ? 'bg-gray-800 hover:bg-gray-700' 
-                                : 'bg-gray-100 hover:bg-gray-200'
-                        }`}
+                        className={`flex items-center gap-2 px-2 py-1 rounded-full cursor-pointer transition bg-gray-800 hover:bg-gray-700`}
                     >
                         <img
                             src="https://randomuser.me/api/portraits/men/75.jpg"
@@ -126,21 +112,11 @@ const NavBar = ({ onMenuClick }) => {
 
                     {/* Dropdown */}
                     {open && (
-                        <div className={`absolute top-12 sm:top-16 right-0 w-48 rounded-xl shadow-lg overflow-hidden border z-50 ${
-                            isDark 
-                                ? 'bg-gray-800 border-gray-600' 
-                                : 'bg-white border-gray-200'
-                        }`}>
+                        <div className={`absolute top-12 sm:top-16 right-0 w-48 rounded-xl shadow-lg overflow-hidden border z-50 bg-gray-800 border-gray-600`}>
                             <ul>
-                                <Link to="/"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
-                                    isDark ? 'hover:bg-gray-700' : 'hover:bg-gray-100'
-                                }`}>Profile</li></Link>
-                                <Link to="/settings"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm ${
-                                    isDark ? 'hover:bg-gray-700' : 'hover:bg-gray-100'
-                                }`}>Settings</li></Link>
-                                <Link to="/Signup"><li className={`px-4 py-3 hover:bg-red-500 cursor-pointer text-sm ${
-                                    isDark ? 'hover:bg-red-600' : 'hover:bg-red-100 text-red-600'
-                                }`}>Logout</li></Link>
+                                <Link to="/"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm hover:bg-gray-700`}>Profile</li></Link>
+                                <Link to="/settings"><li className={`px-4 py-3 hover:bg-opacity-80 cursor-pointer text-sm hover:bg-gray-700`}>Settings</li></Link>
+                                <Link to="/Signup"><li className={`px-4 py-3 hover:bg-red-500 cursor-pointer text-sm `}>Logout</li></Link>
                             </ul>
                         </div>
                     )}
